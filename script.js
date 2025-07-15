@@ -264,7 +264,7 @@ function baixarTexto(texto, nomeArquivo) {
 }
 
 function gerarCSV(labels, mediaData, mediaMaisDesvioData, mediaMenosDesvioData, delayValueData, violationData) {
-    let csv = "Labels,Media,Max,Min,Delay,Violations\n";
+    let csv = "Labels,Mean,Max,Min,Delay,Violations\n";
     for (let i = 0; i < labels.length; i++) {
         csv += `${labels[i]},${mediaData[i]},${mediaMaisDesvioData[i]},${mediaMenosDesvioData[i]},${delayValueData[i]},${violationData[i]}\n`;
     }
